@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"/>
+
+
+        <!--文字说明的部分-->
+        <RelativeLayout
+            android:id="@+id/text_box"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pic"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天猫"
+                android:background="@color/black"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="标题"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/content "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#999"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/num2"
+                android:layout_above="@id/content "
+                android:layout_alignTop="@+id/str1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包邮"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="#999"
+                />
+            <TextView
+                android:id="@+id/num1"
+                android:layout_above="@id/content "
+                android:layout_alignTop="@id/str1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金币抵: "
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="#999"
+                />
+
+
+
+            <TextView
+                android:id="@id/str1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:textSize="12sp"
+                android:textColor="#999"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/rate"
+                android:paddingLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/str1"
+                android:text="付款人数"
+                android:textSize="12sp"
+                android:textColor="#999"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
